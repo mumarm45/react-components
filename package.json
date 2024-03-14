@@ -1,5 +1,5 @@
 {
-  "name": "react-webpack",
+  "name": "webpack-react",
   "version": "1.0.0",
   "description": "This is react project using webpack",
   "main": "index.js",
@@ -14,7 +14,7 @@
     "prepare": "husky install",
     "pretty": "prettier 'src/**/*.js'"
   },
-  "author": "",
+  "author": "momarm45 - Muhammad Omar Muneer",
   "license": "ISC",
   "devDependencies": {
     "@babel/core": "^7.24.0",
@@ -79,5 +79,8 @@
     "*.scss": [
       "stylelint --fix --"
     ]
-  }
+  },
+  "keywords": [
+    "webpack","react","lint-staged","eslint","stylelint","styled-component"
+  ]
 }
