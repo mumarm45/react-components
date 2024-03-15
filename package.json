@@ -81,6 +81,11 @@
     ]
   },
   "keywords": [
-    "webpack","react","lint-staged","eslint","stylelint","styled-component"
+    "webpack",
+    "react",
+    "lint-staged",
+    "eslint",
+    "stylelint",
+    "styled-component"
   ]
 }
