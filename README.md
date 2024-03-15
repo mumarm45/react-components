@@ -22,6 +22,7 @@ I will keep on updating this project.
 
 ## Projecct Structure
 
+```
 .babelrc
 .eslintignore
 .eslintrc
@@ -79,3 +80,5 @@ webpack
    |-- config.js
    |-- plugins.js
    |-- rules.js
+
+```
