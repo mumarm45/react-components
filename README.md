@@ -47,8 +47,6 @@ src
    |   |-- App
    |   |   |-- app.scss
    |   |   |-- app.tsx
-   |   |-- BlogApp
-   |   |   |-- blog-app.component.tsx
    |   |-- Footer
    |   |   |-- footer.component.tsx
    |   |-- Header
