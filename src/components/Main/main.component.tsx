@@ -1,5 +1,6 @@
 import * as React from 'react';
+import { MainStyledComponent } from './main.styled';
 
 export const Main = () => {
- return <div className="main-component">Main</div>;
+ return <MainStyledComponent>Main</MainStyledComponent>;
 };

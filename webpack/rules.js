@@ -58,8 +58,14 @@ function rules(dirname, isDevelopment) {
       use: cssLoader
     },
     {
-      test: /\.(jpe?g|png|gif|svg)$/i,
-      type: "asset/resource",
+      test: /\.(png|svg|jpg|jpeg|gif)$/i,
+      use: [{
+        loader: 'url-loader',
+        options: { 
+            limit: 8000, // Convert images < 8kb to base64 strings
+            name: './assets/images/[hash]-[name].[ext]'
+        } 
+    }]
     },
     {
       test: /\.m?js$/,

@@ -13,7 +13,7 @@ module.exports = {
   path: path.join(__dirname, '/dist'),
   publicPath: '',
   clean: true,
-  assetModuleFilename: 'public/[name][ext]'
+  assetModuleFilename: "public/[name][ext]"
  },
 
  module: {

@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyPlugin = require('copy-webpack-plugin');
 
 function plugins(dirname) {
     return [
@@ -11,7 +12,7 @@ function plugins(dirname) {
             linkType: 'text/css',
             filename: 'main.[fullhash].css'
           }),
-    ]
+              ]
 }
 
 module.exports = plugins;

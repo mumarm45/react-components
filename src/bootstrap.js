@@ -15,5 +15,5 @@ const initApplication = () => {
 
 initApplication();
 function renderApp() {
- root.render(<App tab="home" />);
+ root.render(<App />);
 }

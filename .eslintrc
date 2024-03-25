@@ -2,19 +2,21 @@
   "extends": [
     "standard",
     "plugin:react/recommended",
-    "plugin:jsx-control-statements/recommended",
     "plugin:prettier/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:@typescript-eslint/recommended",
     "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
     "prettier"
   ],
   "parser": "@typescript-eslint/parser",
   "env": {
-    "jasmine": true,
+    "jest": false,
+    "jasmine": false,
     "browser": true
   },
-  "plugins": ["react", "jsx-control-statements", "import", "prettier", "@typescript-eslint", "react-hooks"],
+  "plugins": ["react", "import", "prettier", "@typescript-eslint", "react-hooks"],
   "globals": {
     "PUSHER_CONFIG": true
   },
@@ -36,13 +38,17 @@
     "import/no-duplicates": "error",
     "import/newline-after-import": "error",
     "react/no-access-state-in-setstate": "error",
-    "prettier/prettier": "error",
+    "prettier/prettier": [
+      "error",
+      {
+        "endOfLine": "auto"
+      }
+    ],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/no-explicit-any":"off",
-    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true }],
+    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true, "argsIgnorePattern": "^_", "varsIgnorePattern": "^_", "args": "all"}],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/jsx-curly-brace-presence": ["error"],
     "react-hooks/rules-of-hooks": "warn",

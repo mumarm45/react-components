@@ -1,28 +1,20 @@
-import * as React from 'react';
-import { ThemeProvider as StyledThemeProvider, createGlobalStyle } from 'styled-components';
-import theme from '../../theme/default';
-import { ThemeModel } from '../../theme/ThemeModel';
+import React, { useContext, useMemo } from 'react';
+import { ThemeProvider as StyledThemeProvider } from 'styled-components';
+import CurrentThemeContext from './CurrentThemeContext';
+import { GlobalStyle } from '../../theme/Global.styled';
+import defaultTheme from '../../theme/defaultTheme';
+import darkTheme from '../../theme/darkTheme';
 
-const GlobalStyle = createGlobalStyle`
-  html {
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: ${({ theme: t }: { theme: ThemeModel }) => {
-     return t.fonts.heading;
-    }}
-  }
-`;
-
-const ThemeProvider: React.FC<ThemeProviderProps> = ({ children }) => {
+function ThemeProvider({ children }: ThemeProviderProps) {
+ const { currentTheme } = useContext(CurrentThemeContext);
+ const theme = useMemo(() => (currentTheme === 'light' ? defaultTheme : darkTheme), [currentTheme]);
  return (
   <StyledThemeProvider theme={theme}>
    <GlobalStyle />
    {children}
   </StyledThemeProvider>
  );
-};
+}
 
 export default ThemeProvider;
 

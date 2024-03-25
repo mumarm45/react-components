@@ -1,5 +1,6 @@
 import * as React from 'react';
+import { FooterStyledComponent } from './footer.styled';
 
 export const Footer = () => {
- return <div className="footer-container">footer</div>;
+ return <FooterStyledComponent>footer</FooterStyledComponent>;
 };
