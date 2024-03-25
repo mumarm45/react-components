@@ -16,7 +16,13 @@
     "jasmine": false,
     "browser": true
   },
-  "plugins": ["react", "import", "prettier", "@typescript-eslint", "react-hooks"],
+  "plugins": [
+    "react",
+    "import",
+    "prettier",
+    "@typescript-eslint",
+    "react-hooks"
+  ],
   "globals": {
     "PUSHER_CONFIG": true
   },
@@ -31,7 +37,14 @@
     "import/order": [
       "error",
       {
-        "groups": ["builtin", "external", "index", "sibling", "parent", "internal"],
+        "groups": [
+          "builtin",
+          "external",
+          "index",
+          "sibling",
+          "parent",
+          "internal"
+        ],
         "newlines-between": "never"
       }
     ],
@@ -41,14 +54,27 @@
     "prettier/prettier": [
       "error",
       {
-        "endOfLine": "auto"
+        "endOfLine": "auto",
+        "printWidth": 120,
+        "semi": true,
+        "singleQuote": true,
+        "tabWidth": 2,
+        "trailingComma": "all"
       }
     ],
     "@typescript-eslint/explicit-function-return-type": "off",
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/no-unused-vars": ["error", { "ignoreRestSiblings": true, "argsIgnorePattern": "^_", "varsIgnorePattern": "^_", "args": "all"}],
+    "@typescript-eslint/no-unused-vars": [
+      "error",
+      {
+        "ignoreRestSiblings": true,
+        "argsIgnorePattern": "^_",
+        "varsIgnorePattern": "^_",
+        "args": "all"
+      }
+    ],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/jsx-curly-brace-presence": ["error"],
     "react-hooks/rules-of-hooks": "warn",
@@ -66,7 +92,14 @@
       }
     }
   ],
-  "ignorePatterns": ["tools", "webpack.config.js", "node_modules/", "webpack.config.common.js", "webpack.config.prod.js", "webpack/"],
+  "ignorePatterns": [
+    "tools",
+    "webpack.config.js",
+    "node_modules/",
+    "webpack.config.common.js",
+    "webpack.config.prod.js",
+    "webpack/",
+  ],
   "settings": {
     "react": {
       "version": "detect"

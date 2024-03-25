@@ -7,16 +7,16 @@ import { Main } from '../Main/main.component';
 import { Footer } from '../Footer/footer.component';
 
 export const Layout = () => {
- return (
-  <LayoutStyledComponent>
-   <Header />
-   <Content>
-    <>
-     <SideNav />
-     <Main />
-    </>
-   </Content>
-   <Footer />
-  </LayoutStyledComponent>
- );
+  return (
+    <LayoutStyledComponent>
+      <Header />
+      <Content>
+        <>
+          <SideNav />
+          <Main />
+        </>
+      </Content>
+      <Footer />
+    </LayoutStyledComponent>
+  );
 };

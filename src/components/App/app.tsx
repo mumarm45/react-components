@@ -5,12 +5,12 @@ import { router } from '../Router/Router';
 import CurrentThemeProvider from '../ThemeProvider/CurrentThemeProvider';
 
 function App() {
- return (
-  <CurrentThemeProvider>
-   <ThemeProvider>
-    <RouterProvider router={router} />
-   </ThemeProvider>
-  </CurrentThemeProvider>
- );
+  return (
+    <CurrentThemeProvider>
+      <ThemeProvider>
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </CurrentThemeProvider>
+  );
 }
 export default App;

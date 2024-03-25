@@ -7,7 +7,7 @@ export const GlobalStyle = createGlobalStyle`
 
   body {
      ${({ theme: t }) => {
-      return `font-family:${t.fonts.heading};
+       return `font-family:${t.fonts.heading};
      color: ${t.colors.text};
      background-color:${t.colors.background}
       `;
