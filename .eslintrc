@@ -82,7 +82,8 @@
     "react/display-name": "off",
     "no-use-before-define": "off",
     "@typescript-eslint/no-extra-semi": "off",
-    "jsx-control-statements/jsx-jcs-no-undef": "off"
+    "jsx-control-statements/jsx-jcs-no-undef": "off",
+    "eslint-plugin/no-import-string": "off"
   },
   "overrides": [
     {
