@@ -51,11 +51,11 @@ const colorPalette = {
 const darkColorTheme = {
   colors: {
     heading: colorPalette.text100,
-    text: colorPalette.primary['0'],
+    text: colorPalette.primary['100'],
     white: colorPalette.primary['0'],
     buttons: {
       primary: {
-        border: colorPalette.primary['1000'],
+        border: colorPalette.primary['100'],
         color: colorPalette.primary['80'],
         background: colorPalette.primary['20'],
         hover: colorPalette.primary['10'],
@@ -74,5 +74,4 @@ export const darkTheme = {
   ...commonTheme,
   ...darkColorTheme,
 } as ThemeModel;
-
 export default darkTheme;
