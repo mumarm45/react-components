@@ -5,9 +5,6 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-color: ${(props) => {
-    return props.theme.colors.background;
-  }};
 `;
 export const Logo = styled.div`
   ${({ theme: t }) => {

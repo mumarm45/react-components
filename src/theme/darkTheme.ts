@@ -3,7 +3,7 @@ import { commonTheme } from './commonTheme';
 
 const colorPalette = {
   text100: '#fff',
-  background: '#000000',
+  background: '#2b3a42',
   inputCaretColor: '#047fff',
   tag: '#00779a',
   info: {
@@ -51,7 +51,7 @@ const colorPalette = {
 const darkColorTheme = {
   colors: {
     heading: colorPalette.text100,
-    text: colorPalette.primary['100'],
+    text: colorPalette.primary['0'],
     white: colorPalette.primary['0'],
     buttons: {
       primary: {
