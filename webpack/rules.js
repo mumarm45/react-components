@@ -10,6 +10,7 @@ const cssLoader = {
   loader: "css-loader",
   options: {
     sourceMap: SHOULD_OUTPUT_SOURCE_MAP,
+    url: false
   },
 };
 

@@ -6,7 +6,7 @@
  "scripts": {
   "start": "webpack serve --mode development --open",
   "build": "webpack --mode production --config webpack.config.prod.js",
-  "lint": "npm run lint-js && npm run lint-style",
+  "lint": "npm run lint-fix && npm run lint-style",
   "lint-js-fix": "npm run lint-fix -- --fix ",
   "lint-fix": "eslint --fix './**/*.{js,ts,tsx}' --ignore-path .gitignore --color --max-warnings 7",
   "lint-style": "stylelint 'src/**/*.scss'",
