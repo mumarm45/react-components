@@ -44,22 +44,6 @@ src
    |   |   |-- style.scss
    |-- bootstrap.js
    |-- components
-   |   |-- App
-   |   |   |-- app.scss
-   |   |   |-- app.tsx
-   |   |-- Footer
-   |   |   |-- footer.component.tsx
-   |   |-- Header
-   |   |   |-- header.component.tsx
-   |   |-- Home
-   |   |   |-- home.component.tsx
-   |   |   |-- home.style.scss
-   |   |-- Layout
-   |   |   |-- layout.component.tsx
-   |   |-- List
-   |   |   |-- list.component.tsx
-   |   |-- Main
-   |   |   |-- main.component.tsx
    |   |-- Router
    |   |   |-- Root.tsx
    |   |   |-- Router.tsx
