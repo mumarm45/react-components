@@ -66,15 +66,7 @@
     "@typescript-eslint/no-empty-function": "off",
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-use-before-define": "off",
-    "@typescript-eslint/no-unused-vars": [
-      "error",
-      {
-        "ignoreRestSiblings": true,
-        "argsIgnorePattern": "^_",
-        "varsIgnorePattern": "^_",
-        "args": "all"
-      }
-    ],
+    "@typescript-eslint/no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
     "@typescript-eslint/explicit-module-boundary-types": "off",
     "react/jsx-curly-brace-presence": ["error"],
     "react-hooks/rules-of-hooks": "warn",
